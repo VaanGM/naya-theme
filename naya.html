@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 
-<!--
-  Theme: Zen
-  by @sanographix
-  http://www.sanographix.net
-  (c) 2014 Showkaku Sano
-  Free to use under the MIT license.
-  Please leave at least ONE credit link. Do not delete this box.
--->
-
-<html lang="ja"
+<html lang="en"
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
@@ -28,7 +19,7 @@
   <meta name="if:Show Description" content="1" />
   <meta name="if:Show Profile Image" content="0" />
   <meta name="if:Show Header RSS Link" content="1" />
-  <meta name="if:Enable Hatena Star" content="1" />
+  <meta name="if:Enable Hatena Star" content="0" />
   <meta name="if:Enable Facebook Button" content="1" />
   <meta name="if:Enable Tweet Button" content="1" />
   <meta name="if:Enable Plus1 Button" content="1" />
@@ -53,7 +44,7 @@
   <link rel="alternate" type="application/rss+xml" href="{RSS}">
   <link rel="apple-touch-icon" href="{PortraitURL-128}">
 
-  <link  href="//sanographix.github.io/public/tumblr/zen/2.x/css/style.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8"/>
+  <link  href="//rawgit.com/VaanGM/naya-theme/master/style.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8"/>
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
 
   <!-- OGP -->
@@ -490,32 +481,13 @@ src="{ReblogRootPortraitURL-16}" class="favicon"/> {ReblogRootName}</a>
 
   </div>
 
-  <script src="//sanographix.github.io/public/tumblr/zen/2.x/js/zen-js.min.js"></script>
+  <script src="//rawgit.com/VaanGM/naya-theme/master/naya-js.min.js"></script>
   {block:IfEnableSyntaxHighlight}
-    <script src="//sanographix.github.io/public/tumblr/zen/2.x/js/prettify.js"></script>
+    <script src="//rawgit.com/VaanGM/naya-theme/master/prettify.js"></script>
     <script>$(function(){prettyPrint()});</script>
   {/block:IfEnableSyntaxHighlight}
 
-  {block:IfEnableHatenaStar}
-    <script type="text/javascript" src="https://s.hatena.ne.jp/js/HatenaStar.js"></script>
-    <script type="text/javascript">
-      Hatena.Star.Token = '{text:Hatena Star Token}';
-    </script>
-    <script type="text/javascript">
-      Hatena.Star.SiteConfig = {
-        entryNodes: {
-          'article.post': {
-            uri: '.entry-title a',
-            title: 'document.title',
-            container: 'div.meta-footer'
-          }
-        }
-      };
-    </script>
-    <script type="text/javascript">
-      Hatena.Star.EntryLoader.headerTagAndClassName = ['div','meta-footer'];
-    </script>
-  {/block:IfEnableHatenaStar}
+
 
 </body>
 </html>
