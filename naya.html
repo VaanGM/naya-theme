@@ -188,9 +188,9 @@
         {block:Answer}answer{/block:Answer}
         ">
           {block:Date}
-          <div class="date">
-            {block:NewDayDate}<p><a href="{Permalink}">{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}</a></p>{/block:NewDayDate}
-            {block:SameDayDate}<p><a href="{Permalink}">{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}</a></p>{/block:SameDayDate}
+          <div class="date"><!-- Original Date Format {Year}-{MonthNumberWithZero}-{DayOfMonthWithZero} -->
+            {block:NewDayDate}<p><a href="{Permalink}">{DayOfMonthWithZero}-{MonthNumberWithZero}-{Year}</a></p>{/block:NewDayDate}
+            {block:SameDayDate}<p><a href="{Permalink}">{DayOfMonthWithZero}-{MonthNumberWithZero}-{Year}}</a></p>{/block:SameDayDate}
           </div>
           {/block:Date}
 
