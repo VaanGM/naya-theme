@@ -631,7 +631,7 @@ hr {
     line-height: 1.5em;
     margin: 0;
     font-weight: normal;
-    padding: 70px 0 0 0;
+    padding: 55px 0 0 0;
     letter-spacing: .2em
 }
 
@@ -684,7 +684,7 @@ hr {
 
 .nav { 
     position:fixed;
-    margin: 30px 0 10px 0;
+    margin: 5px 0 10px 0;
     font-size: 75%;
     width:inherit
 }
