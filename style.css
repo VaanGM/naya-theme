@@ -685,7 +685,8 @@ hr {
 .nav { 
     position:fixed;
     margin: 30px 0 10px 0;
-    font-size: 75%
+    font-size: 75%;
+    width:inherit
 }
 
 .nav ul {
